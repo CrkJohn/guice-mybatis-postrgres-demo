@@ -3,11 +3,11 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>edu.eci.pdsw.samples</groupId>
-    <artifactId>PDSW-2017-1-par2t</artifactId>
+    <artifactId>GUICE-MYBATIS-POSTGRES-STACKDEMO</artifactId>
     <version>1.0</version>
     <packaging>war</packaging>
 
-    <name>PDSW-2017-1-par2t</name>
+    <name>GUICE-MYBATIS-POSTGRES-STACKDEMO</name>
 
     <properties>
         <endorsed.dir>${project.build.directory}/endorsed</endorsed.dir>
@@ -56,11 +56,17 @@
             <version>7.0</version>
             <scope>provided</scope>
         </dependency>
+        
+        
+        
         <dependency>
-            <groupId>mysql</groupId>
-            <artifactId>mysql-connector-java</artifactId>
-            <version>5.1.36</version>
+            <groupId>org.postgresql</groupId>
+            <artifactId>postgresql</artifactId>
+            <version>42.0.0</version>
         </dependency>
+        
+        
+        
         <dependency>
             <groupId>org.mybatis</groupId>
             <artifactId>mybatis</artifactId>
@@ -126,7 +132,7 @@
                 </dependencies>
                 <configuration>
                     <driver>org.h2.Driver</driver>                    
-                    <url>jdbc:h2:file:./target/db/testdb;MODE=MYSQL</url>
+                    <url>jdbc:h2:file:./target/db/testdb;MODE=PostgreSQL</url>
                     <username>anonymous</username>
                     <password></password>
                     <autocommit>false</autocommit>

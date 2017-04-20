@@ -17,10 +17,10 @@
         <environment id="development">
             <transactionManager type="JDBC" />
             <dataSource type="POOLED">
-                <property name="driver" value="com.mysql.jdbc.Driver" />
-                <property name="url" value="jdbc:mysql://desarrollo.is.escuelaing.edu.co:3306/bdprueba" />
-                <property name="username" value="bdprueba" />
-                <property name="password" value="bdprueba" />
+                <property name="driver" value="org.postgresql.Driver" />
+                <property name="url" value="jdbc:postgresql://ec2-54-225-118-55.compute-1.amazonaws.com:5432/d8pjmfc3qfvhsr?ssl=true&amp;sslfactory=org.postgresql.ssl.NonValidatingFactory"/>
+                <property name="username" value="rvoofqbcfdgqwt" />
+                <property name="password" value="2024b9fe45899e721e3a50bbc1edc1104a2d1866a11398e28465b5007dc99ca4" />
             </dataSource>
         </environment>
     </environments>
