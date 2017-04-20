@@ -62,7 +62,7 @@ public class ServicesJUnitTest {
      * @throws SQLException 
      */
     private Connection getConnection() throws SQLException{
-        return DriverManager.getConnection("jdbc:h2:file:./target/db/testdb;MODE=MYSQL", "anonymous", "");        
+        return DriverManager.getConnection("jdbc:h2:file:./target/db/testdb;MODE=PostgreSQL", "anonymous", "");        
     }
     
     @Test
@@ -80,9 +80,9 @@ public class ServicesJUnitTest {
         
         Set<Comentario> comentarios=ServiciosSuscripcionesFactory.getInstance().getSuscriptionServicesForTesting().comenteriosMasBajosPorRangoEdad(1, 10);
         
-        for (Comentario c: comentarios){
-            System.out.println(comentarios);
-        }
+        //for (Comentario c: comentarios){
+        //    System.out.println(comentarios);
+        //}
         //assert ...
         //Assert.fail("Pruebas no implementadas aun...");
         
